@@ -2,7 +2,7 @@ function lagring() {
 
     let feilTeller = 0;
 
-    let innFilmNavnet = $("#select").val();
+    let innFilmNavnet = $("#velg").val();
     if ((innFilmNavnet === "")) {
         feilTeller++;
         alert("Må velges en film");
@@ -54,14 +54,11 @@ function lagring() {
     }
 }
 
-
-
 function hentAlle() {
     $.get("/vis", function (data) {
         formater(data)
     });
 }
-
 function formater(tickets) {
 
     let ut = "<table class = 'table table-striped mt-4' style='background-color: bisque'>" +
@@ -90,13 +87,11 @@ function formater(tickets) {
     ut += "</table>"
     $("#skriv").html(ut);
 }
-
 function slett() {
     $.get("/slett", function () {
         hentAlle();
     });
 }
-
 function fjerner() {
     $("#select").val("")
     $("#antall").val("")
