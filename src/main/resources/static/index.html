@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <style>
+
+    h1{
+      color: #164c60;
+      font-size: xxx-large;
+    }
+    button{
+
+      color: #ad2137;
+    }
+    button:hover{
+      background-color: #bd1e41;
+    }
+  </style>
+  <title>Bestilling av KinoBilletter</title>
+</head>
+<body>
+  <br><br>
+  <h1 style="margin-left: 20px">Bestilling av Kinobilletter</h1>
+  <table style="margin-left: 20px">
+    <tr>
+      <td><label for="select">Velg Film</label></td>
+      <td><select id="select">
+        <option style="background-color:red"></option>
+        <option style="background-color:red">Fast And Ferious</option>
+        <option style="background-color:red">TITANIC</option>
+        <option style="background-color:red">Life Of Pi</option>
+      </select></td>
+      <td id="div1"></td>
+    </tr>
+    <br>
+    <tr>
+      <td><br><label for="antall">Antall</label></td>
+      <td><br><input id="antall" type="number" min="1" placeholder="Skriv inn antallet" required></td>
+    </tr>
+    <tr>
+      <td><br><label for="fornavn">Fornavn</label></td>
+      <td><br><input id="fornavn" type="text" placeholder="Skriv inn navn" required></td>
+    </tr>
+    <tr>
+      <td><br><label for="etternavn">Etternavn</label></td>
+      <td><br><input id="etternavn" type="text" placeholder="Skriv inn etternavn" required></td>
+    </tr>
+    <tr>
+      <td><br><label for="telefon">Telefonnr</label></td>
+      <td><br><input id="telefon" type="text" placeholder="Skriv inn telefonnumer" required></td>
+    </tr>
+    <tr>
+      <td><br><label for="epost">E-post</label></td>
+      <td><br><input id="epost" type="email" placeholder="Skriv inn e-post" required></td>
+    </tr>
+  </table>
+  <br>
+  <div id="skriv"></div>
+  <button type="button" onclick="lagring()">R E G I S T E R  </button>
+  <button onclick="slett()" style="width: 90px">S L E T T</button>
+  <!--class="btn btn-outline-primary"-->
+</div>
+<script
+        type="application/javascript"
+        src="Oblig3.js">
+</script>
+</body>
+</html>
